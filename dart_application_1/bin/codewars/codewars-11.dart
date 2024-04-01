@@ -12,5 +12,5 @@ List<int> extraPerfect1(int n) => List<int>.generate(
     (n / 2).round(), (index) => !index.isEven ? index : index);
 
 void main(List<String> args) {
-  print(extraPerfect1(3));
+  print(extraPerfect1(100));
 }
