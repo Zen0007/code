@@ -29,7 +29,7 @@ String factortial(n) {
 }
 
 void main(List<String> args) {
-  print(factortial(145));
-  print(factortial(9));
+  print(factortial1(145));
+  print(factortial1(90));
   print(factortial(185));
 }

@@ -13,7 +13,6 @@ bool isUpperCase(String str) {
 }
 
 void main(List<String> args) {
-  print(isUpperCase("Si"));
-
-  print("STRING ".contains(RegExp(r'[a-z]')) ? false : true);
+  print(isUpperCase("SDDDi")); //false
+  print("STRING ".contains(RegExp(r'[a-z]')) ? false : true); //true
 }

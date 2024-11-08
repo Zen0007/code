@@ -37,5 +37,5 @@ List<int> array(List<int> n) {
 
 void main(List<String> args) {
   print(array([26, 23, 24, 17, 23, 24, 23, 26]));
-  print(array([1, 1, 2, 2, 3, 3, 3]));
+  print(array2([1, 1, 2, 2, 3, 3, 3]));
 }

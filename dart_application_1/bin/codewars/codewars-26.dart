@@ -13,5 +13,5 @@ bool employe(bool a, b) {
 }
 
 void main(List<String> args) {
-  print(employe(false, true));
+  print(employe1(false, true));
 }

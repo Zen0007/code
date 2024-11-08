@@ -23,5 +23,5 @@ List<int> solve(a, b) {
 }
 
 void main(List<String> args) {
-  print(solve(6, 7));
+  print(solve(6, 19));
 }

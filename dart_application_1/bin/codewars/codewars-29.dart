@@ -23,6 +23,5 @@ int? predictAge2(int a, int b, int c, int d, int e, int f, int g, int h) {
 }
 
 void main(List<String> args) {
-  print(predictAge2(65, 60, 75, 55, 60, 63, 64, 45));
-  print(4225 + 4225);
+  print(predictAge2(65, 60, 75, 55, 60, 17, 64, 45));
 }

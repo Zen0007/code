@@ -4,7 +4,8 @@ bool negationValue(String str, bool val) {
 }
 
 void main(List<String> args) {
-  var str = "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"; //false
+  var str = "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"; //false
   var str1 = "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"; //true
   print(negationValue(str1, true));
+  print(negationValue(str, true));
 }

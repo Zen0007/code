@@ -4,7 +4,7 @@ int? searchBinary(List<int> number, int target) {
 
   while (left <= ringt) {
     int mid = (ringt + left) ~/ 2;
-    //int result = mid.toInt();
+    int result = mid.toInt();
 
     if (target == number[mid]) {
       return mid;
@@ -13,19 +13,15 @@ int? searchBinary(List<int> number, int target) {
     } else {
       left = mid + 1;
     }
+    return result;
   }
-  return -1;
 }
 
 void main() {
-  List<int> number = [1, 5, 8, 3, 7, 4, 9, 3];
-  int target = 3;
+  List<int> number = [1, 5, 3, 8, 3, 7, 4, 9, 3];
+  int target = 4;
 
   int? index = searchBinary(number, target);
 
-  if (index != -1) {
-    print("Element found at index $index");
-  } else {
-    print("Element not found in the array");
-  }
+  print(index);
 }

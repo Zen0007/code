@@ -1,7 +1,7 @@
 import 'dart:math';
 
 int? rowSumOddNumbers1(int n) {
-  return pow(n, 3).toInt();
+  return pow(n, 3).toInt(); //pow cuadrad of nomber
 }
 
 int rowSumOddNumbers(int n) {
@@ -20,5 +20,5 @@ int rowSumOddNumbers(int n) {
 }
 
 void main(List<String> args) {
-  print(rowSumOddNumbers(5));
+  print(rowSumOddNumbers(50));
 }

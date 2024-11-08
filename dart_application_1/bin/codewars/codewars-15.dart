@@ -53,5 +53,5 @@ String disariumNumber1(n) => n ==
 String disarium(int n) => (n * n) % 2 == 0 ? "Disarium !!" : "Not !!";
 
 void main(List<String> args) {
-  print(disariumNumber1(145));
+  print(disariumNumber1(1202));
 }

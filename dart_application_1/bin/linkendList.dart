@@ -58,7 +58,6 @@ class LinkendList<T> {
 
 void main(List<String> args) {
   final linkendList = LinkendList<int>();
-  var list;
   linkendList.add(90);
   linkendList.add(30);
   linkendList.add(87);

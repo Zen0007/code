@@ -31,5 +31,5 @@ String getMiddle1(String s) {
 }
 
 void main() {
-  print(getMiddle1('hello||word'));
+  print(getMiddle('hello||Word'));
 }

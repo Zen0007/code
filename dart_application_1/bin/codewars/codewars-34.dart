@@ -1,4 +1,3 @@
-//https://www.codewars.com/kata/59b844528bcb7735560000a0/train/dart
 String oddOrEven1(List<int> array) {
   int sum = array.reduce((a, b) {
     return b >= 0 ? a + b : a;
@@ -21,5 +20,5 @@ String oddOrEven2(List<int> array) {
 }
 
 void main() {
-  print(oddOrEven([-100, 99]));
+  print(oddOrEven([20, 99]));
 }

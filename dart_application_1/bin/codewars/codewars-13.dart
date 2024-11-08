@@ -30,5 +30,5 @@ int getCount(String inputStr) {
 }
 
 void main(List<String> args) {
-  print(getCount("abcde"));
+  print(getCount("a v a iu o e "));
 }

@@ -26,5 +26,5 @@ int descendingOrder(n) {
 }
 
 void main() {
-  print(descendingOrder(123456789));
+  print(descendingOrder(1222));
 }

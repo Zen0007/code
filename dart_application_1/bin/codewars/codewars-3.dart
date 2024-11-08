@@ -9,5 +9,5 @@ bool checkForFactor(int base, int factor) {
 }
 
 void main() {
-  print(checkForFactor(24612, 3));
+  print(checkForFactor(122, 3));
 }

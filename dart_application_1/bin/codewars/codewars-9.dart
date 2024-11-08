@@ -10,5 +10,5 @@ int? quarter(int month) {
 int? quarter1(int month) => (month / 3).ceil();
 
 void main(List<String> args) {
-  print(quarter1(11));
+  print(quarter1(100));
 }

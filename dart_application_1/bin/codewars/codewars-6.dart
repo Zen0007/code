@@ -13,5 +13,5 @@ int century1(y) => y <= 1 == 100 ? 1 : (y - 1) ~/ 100 + 1;
 int century2(y) => (y + 99) ~/ 100;
 
 void main(List<String> args) {
-  print(century2(1970));
+  print(century2(1920));
 }

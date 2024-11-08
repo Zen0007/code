@@ -34,6 +34,6 @@ int checkChoose(int m, n) {
 }
 
 void main(List<String> args) {
-  print(checkChoose(100, 4));
+  print(checkChoose(101, 4));
   print(checkChoose(47129212243960, 50));
 }

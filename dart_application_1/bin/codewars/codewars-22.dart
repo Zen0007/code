@@ -1,5 +1,3 @@
-import 'dart:math';
-
 int stairsIn20(List<List<int>> arr) {
   int sum = 0;
   for (var i in arr) {

@@ -38,11 +38,11 @@ int max(List<int> n) => n
     .reduce((value, element) => value > element ? value : element);
 
 void main(List<String> args) {
-  final arr = [-1, -2, 3];
+  final arr = [-1, -2, -3, 7];
   //.where((element) => indexOf(element) < n.length - 1)
   //print(max([9, 5, 10, 2, 24, -1, -48]));
   print(arr.where((element) => arr.indexOf(element) < arr.length - 1).map((e) =>
       e *
       arr[arr.indexOf(e) + 1])); //(529, 16, 25, 9801, 729, 108241, 4, 49) no +1
-  print(max(arr));
+  print(max4(arr));
 }

@@ -24,5 +24,5 @@ int list(List nu) {
 }
 
 void main(List<String> args) {
-  print(list([2, 4, 0, 100, 4, 11, 2602, 36]));
+  print(list([2, 4, 0, 10, 4, 11, 2602, 36]));
 }

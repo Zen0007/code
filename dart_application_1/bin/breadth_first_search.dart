@@ -67,9 +67,12 @@ void main(List<String> args) {
   g.addEdge(n2, n6);
   g.addEdge(n4, n7);
   g.addEdge(n5, n6);
-  final asw = g.shorstPath(n6, n7);
+  final asw = g.shorstPath(n7, n1);
   print(asw);
 }
+
+
+
 // class Solution {
 //   Set<String> found = {};
 //   Set<String> second_island_set = {};

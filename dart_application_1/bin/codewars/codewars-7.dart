@@ -26,5 +26,5 @@ bool isSquare(n) {
 }
 
 void main(List<String> args) {
-  print(isSquare(0));
+  print(isSquare(33));
 }

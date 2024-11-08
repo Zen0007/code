@@ -13,5 +13,5 @@ int sumCubes(int n) {
 }
 
 void main(List<String> args) {
-  print(sumCubes(5));
+  print(sumCubes(14));
 }

@@ -1,6 +1,6 @@
 List<int> extraPerfect(int n) {
   List<int> result = [];
-  for (var i = 1; i < n + 1; i++) {
+  for (var i = 0; i <= n; i++) {
     if (!i.isEven) {
       result.add(i);
     }
@@ -12,5 +12,5 @@ List<int> extraPerfect1(int n) => List<int>.generate(
     (n / 2).round(), (index) => !index.isEven ? index : index);
 
 void main(List<String> args) {
-  print(extraPerfect1(100));
+  print(extraPerfect(100));
 }

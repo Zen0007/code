@@ -28,5 +28,5 @@ List<List<int>> arr4(int n) {
 }
 
 void main(List<String> args) {
-  print(arr(3));
+  print(arr2(9));
 }

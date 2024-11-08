@@ -16,5 +16,5 @@ String? updateLight(String current) => current == "green"
 //green, to yellow, to red, and then to green
 
 void main() {
-  print(updateLight("red"));
+  print(updateLight("yellow"));
 }

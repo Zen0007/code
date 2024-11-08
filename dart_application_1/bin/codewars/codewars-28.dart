@@ -22,5 +22,5 @@ double areaOfPolygonInsideCircle(double r, int n) {
 }
 
 void main(List<String> args) {
-  print(areaOfPolygonInsideCircle(3.0, 3));
+  print(areaOfPolygonInsideCircle1(9.76, 300));
 }
