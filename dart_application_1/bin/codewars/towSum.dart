@@ -1,7 +1,5 @@
 import 'dart:collection';
 
-import '../dart_application_1.dart';
-
 List<int>? sum(List<int> array, int target) {
   List<int> result = [];
   Map<int, int> map = HashMap<int, int>();
@@ -24,7 +22,7 @@ List<int> twoSum(List<int> array, int target) {
         array.indexOf(target - array[i]) != i) {
       result = [array.indexOf(target - array[i]), i];
     }
-    // print("${array[j]}");
+    print("${array[j]}");
   }
   return result;
 }

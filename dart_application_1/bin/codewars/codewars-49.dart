@@ -1,5 +1,3 @@
-import 'dart:math';
-
 void main(List<String> args) {
   try {
     //print(cats(547, 937));

@@ -83,9 +83,9 @@ int? romanInt(String roman) {
 }
 
 void main(List<String> args) {
-  String roman = "MCMXCIV";
-  var sum = 0;
-  var reverse = '';
+  // String roman = "MCMXCIV";
+  // var sum = 0;
+  // var reverse = '';
   Map<String, int> map = HashMap<String, int>();
   map.putIfAbsent("I", () => 1);
   map.putIfAbsent("V", () => 5);
@@ -94,7 +94,7 @@ void main(List<String> args) {
   map.putIfAbsent("C", () => 100);
   map.putIfAbsent("D", () => 500);
   map.putIfAbsent("M", () => 1000);
-  int result = map[roman[roman.length - 1]]!;
+  // int result = map[roman[roman.length - 1]]!;
   // len == 3 index start 0 3 is not in index len -1 = 2 last index
 
   try {

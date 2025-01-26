@@ -1,0 +1,39 @@
+[
+    {
+        "asta": {
+            "status": "borrow",
+            "name": "asta",
+            "class": "xi",
+            "nameTeacher": "yami",
+            "nisn": "12345678",
+            "imageSelfie": "-",
+            "imageStudentCard": "-",
+            "items": [
+                {
+                    "category": "accessPoint",
+                    "id": "1",
+                    "label": "no 123",
+                    "nameItem": "tp Link",
+                    "image": "-",
+                    "status": "available"
+                },
+                {
+                    "category": "accessPoint",
+                    "id": "2",
+                    "label": "no 123",
+                    "nameItem": "tp Link",
+                    "image": "-",
+                    "status": "available"
+                },
+                {
+                    "category": "mikrotick",
+                    "id": "1",
+                    "label": "no 2",
+                    "nameItem": "cisco",
+                    "image": "-",
+                    "status": "available"
+                }
+            ]
+        }
+    }
+]

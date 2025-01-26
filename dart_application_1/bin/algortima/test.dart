@@ -440,38 +440,125 @@ Stream<List<Map<String, dynamic>>> dataChat() async* {
 
 // );
 
-Future<void> postData() async {
-  try {
-    final url = Uri.parse(
-        'https://chat-app-8122b-default-rtdb.asia-southeast1.firebasedatabase.app/main.json');
+Stream<List> retrunData() async* {
+  final data = [
+    [1, 2, 3, 4, 5, 6, 6],
+    [5, 6, 4, 3, 3, 3],
+    [5, 7, 8, 2, 3, 4, 3],
+    [4, 5, 6, 3, 4, 4, 5]
+  ];
+  for (var el in data) {
+    yield el;
+  }
+}
 
-    http.post(
-      url,
-      headers: {"Content-Type": "application/json"},
-      body: json.encode(
-        {
-          'user01': {
-            "profile": {
-              "name": "lucifero",
-              "email": "lucifero@gmail.com",
-              "password": "Lucifero0033",
-            },
-          }
-        },
-      ),
+final list = [];
+
+Stream<String> response() async* {
+  final data = [
+    {
+      "endPoint": "login",
+      "data": {"name": "asta"}
+    },
+    {
+      "endPoint": "login",
+      "data": {"name": "yuno"}
+    },
+    {
+      "endPoint": "logout",
+      "data": {"message": "succest logout"}
+    },
+    {
+      "endPoint": "register",
+      "data": {"message": "succest register"}
+    },
+    {
+      "endPoint": "addNewAdmin",
+      "data": {"message": "succest add new admin"}
+    },
+    {
+      "endPoint": "addNewitem",
+      "data": {"message": "succest add new item"}
+    }
+  ];
+  final encode = json.encode(data);
+  yield encode;
+}
+
+class Ws {
+  final StreamController streamController = StreamController();
+  Completer<List> _dataCompleter = Completer<List>();
+  Stream<List> get data => _dataCompleter.future.asStream();
+
+  Ws() {
+    connect();
+  }
+
+  void connect() async {
+    final stream = response(); // Assuming this returns a Stream<String>
+
+    stream.listen(
+      (event) {
+        final decode = json.decode(event);
+        if (!_dataCompleter.isCompleted) {
+          // Only complete the completer once
+          _dataCompleter.complete(decode);
+        }
+
+        streamController.add(decode);
+      },
+      onDone: () {
+        print("done");
+      },
     );
-  } catch (e, s) {
-    print(e);
-    print(s);
+  }
+
+  Stream login() async* {
+    List<Map> data = [];
+    await for (var index in streamController.stream) {
+      if (index.first['endPoint'] == 'login') {
+        data.add(index.first);
+      }
+    }
+
+    yield data;
   }
 }
 
 void main() async {
-  postData();
+  // final convert = File("assets/black bull.jpeg").readAsBytesSync();
+  // String base64Image = base64Encode(convert);
+  // print(base64Image);
+  // final complet = Completer<Map>();
+  final Ws ws = Ws();
+  await for (var data in ws.login()) {
+    print(data);
+  }
+  // await for (var data in stream) {
+  //   print(data.runtimeType);
+  //   print(data);
+  // }
+  // final future = complet.future.asStream();
+  // print(future);
+}
+
+void get(Map data) {
+  // resuts.addAll(data);
+  // print("$data data");
+}
+
+String generateRandomString(int length) {
+  const chars =
+      'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#\$%^&*()_+';
+  Random rnd = Random();
+  return List.generate(length, (index) => chars[rnd.nextInt(chars.length)])
+      .join();
 }
 
 void test() {
   String urlUser = 'HTtp://172.170  .1.1';
+  final current = urlUser.replaceAll(" ", "");
+  print(current);
 
   if (urlUser.replaceAll(" ", '').toLowerCase() == 'http://172.170.1.1') {
     print("success");

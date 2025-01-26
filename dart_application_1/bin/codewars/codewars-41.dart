@@ -34,5 +34,4 @@ String well2(List<String> x) {
       : good < 1
           ? 'Fail!'
           : "Publish!";
-  ;
 }

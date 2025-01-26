@@ -30,7 +30,6 @@ String prefix(List<String> list) {
 
 void main(List<String> args) {
   List<String> list = ["flower", "flow", "flight"];
-  String zero = list[0];
 
   print(prefix(list));
 }

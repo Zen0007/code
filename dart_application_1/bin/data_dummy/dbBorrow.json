@@ -1,0 +1,72 @@
+[
+    {
+        "asta": {
+            "status": "borrow",
+            "name": "asta",
+            "class": "xi",
+            "nameTeacher": "yami",
+            "nisn": "12345678",
+            "imageSelfie": "-",
+            "imageStudenCard": "-",
+            "item": {
+                "accesPoint": {
+                    "1": {
+                        "label": "no 123",
+                        "nameItem": "tp Link",
+                        "image": "-",
+                        "status": "availeble"
+                    },
+                    "2": {
+                        "label": "no 123",
+                        "nameItem": "tp Link",
+                        "image": "-",
+                        "status": "availeble"
+                    }
+                },
+                "mikrotick": {
+                    "1": {
+                        "nameItem": "cisco",
+                        "label": "no 2",
+                        "image": "-",
+                        "status": "availeble"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "yuno": {
+            "status": "borrow",
+            "name": "yuno",
+            "class": "xi",
+            "nameTeacher": "yami",
+            "nisn": "12345678",
+            "imageSelfie": "-",
+            "imageStudenCard": "-",
+            "item": {
+                "accesPoint": {
+                    "1": {
+                        "label": "no 123",
+                        "nameItem": "tp Link",
+                        "image": "-",
+                        "status": "availeble"
+                    },
+                    "2": {
+                        "label": "no 123",
+                        "nameItem": "tp Link",
+                        "image": "-",
+                        "status": "availeble"
+                    }
+                },
+                "mikrotick": {
+                    "1": {
+                        "nameItem": "cisco",
+                        "label": "no 2",
+                        "image": "-",
+                        "status": "availeble"
+                    }
+                }
+            }
+        }
+    }
+]

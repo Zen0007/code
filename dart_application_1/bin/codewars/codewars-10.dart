@@ -1,9 +1,10 @@
-String? chromosomeCheck1(String sperm) {
+String chromosomeCheck1(String sperm) {
   if (sperm == 'XX') {
     return "Congratulations! You're going to have a daughter.";
   } else if (sperm == "XY") {
     return "Congratulations! You're going to have a son.";
   }
+  return '';
 }
 
 String? chromosomeCheck(String n) => n == 'XX'

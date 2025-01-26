@@ -18,8 +18,6 @@
 
 // Follow up: Could you solve it without converting the integer to a string?
 
-
-
 bool isPalindrome(int x) {
   String str = "$x";
   String reverse = '';
@@ -38,15 +36,15 @@ void main(List<String> args) {
   // print(isPalindrome(333311113333));
   // stopwatch.stop();
   // print(stopwatch.elapsed.inMilliseconds);
-  int integer = 2222211111;
-  String str = "$integer";
-  String reverse = '';
-  for (var i = 0; i < str.length; i++) {
-    var res = str.length - 1 - i;
-    print(str[res]);
-    //reverse += str[i - 1].toString();
-    // print(str[i - 1]);
-  }
+  // int integer = 2222211111;
+  // String str = "$integer";
+//  String reverse ='';
+//   for (var i = 0; i < str.length; i++) {
+//     var res = str.length - 1 - i;
+//     print(str[res]);
+//     reverse += str[i - 1].toString();
+//     print(str[i - 1]);
+//   }
   // print('$reverse $str');
   // print(reverse.runtimeType);
   // print(str.runtimeType);

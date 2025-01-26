@@ -1,4 +1,4 @@
-int? searchBinary(List<int> number, int target) {
+int searchBinary(List<int> number, int target) {
   int ringt = number.last;
   int left = 0;
 
@@ -15,6 +15,7 @@ int? searchBinary(List<int> number, int target) {
     }
     return result;
   }
+  return 0;
 }
 
 void main() {
